@@ -45,6 +45,7 @@ hr.separator{
 
 .cardd {
     /* max-width: 350px; */
+    padding: 5px;
 }
 .grid-wrapper .cardd {
     border-style: solid;
@@ -59,6 +60,16 @@ hr.separator{
 
 .cardd-image-container {
     height: 100px;
+    /* margin-top: 50%;
+    transform: translateY(-50%); */
+}
+
+img.cardd-body {
+    /* max-width: auto; */
+    /* height: 220px; */
+    max-height: 100%;
+    max-width: 100%;
+    /* max-height: 220px; */
 }
 
 .portrait-image-container{
@@ -82,13 +93,7 @@ hr.separator{
 .medium:hover {
     color:rgb(0, 100, 0) !important;
 }
-img.cardd-body {
-    /* max-width: auto; */
-    /* height: 220px; */
-    max-height: 100%;
-    max-width: 100%;
-    /* max-height: 220px; */
-}
+
 
 /* Whitepaper button */
 .unique-block-button {
