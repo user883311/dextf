@@ -6,6 +6,11 @@ navbar {
     padding-bottom: 5em;
 }
 
+.navbar-logo {
+    height: 2em;
+    width: auto;
+}
+
 /* --- */
 
 body .container-fluid:nth-child(2n+1) {
