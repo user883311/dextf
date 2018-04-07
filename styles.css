@@ -38,6 +38,9 @@ hr.separator{
     grid-gap: 1em;
 }
 
+.cardd {
+    /* max-width: 350px; */
+}
 .grid-wrapper .cardd {
     border-style: solid;
     border-width: 2px;
@@ -64,6 +67,9 @@ hr.separator{
 }
 .linkedin:hover {
     color:rgb(0, 115, 176) !important;
+}
+.medium, .facebook {
+    font-size: 2em;
 }
 .facebook:hover {
     color:rgb(66, 103, 178) !important;
@@ -100,6 +106,9 @@ No media query since this is the default in Bootstrap */
 @media (min-width: 576px) {
     .embed-container {
         max-width: 768px;
+    }
+    .grid-wrapper {
+        max-width: 80%;
     }
     .grid1-wrapper {
         grid-template-columns: repeat(2, 1fr);
