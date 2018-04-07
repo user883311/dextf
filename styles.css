@@ -1,0 +1,147 @@
+/* Fixed navbars use position: fixed, meaning they’re pulled 
+from the normal flow of the DOM and may require custom CSS 
+(e.g., padding-top on the <body>) to prevent overlap with 
+other elements. */
+navbar {
+    padding-bottom: 5em;
+}
+
+/* --- */
+
+body .container-fluid:nth-child(2n+1) {
+    background-color: rgb(133, 134, 139);
+}
+
+body>div {
+    padding: 2em 0 2em 0;
+}
+
+div h1 {
+    margin-bottom: 0.5em;
+}
+div h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+div h4 {
+    margin-top: 0.5em;
+}
+
+hr.separator{
+    margin: 40px;
+ }
+
+/* GRIDS */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1em;
+}
+
+.grid-wrapper .cardd {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+
+.cardd.portrait {
+    border-style: none;
+}
+
+.cardd-image-container {
+    height: 100px;
+}
+
+.portrait-image-container{
+    height: 50vh;
+}
+.person-credential {
+    color: grey;
+}
+.icon {
+    color: grey !important;
+}
+.linkedin:hover {
+    color:rgb(0, 115, 176) !important;
+}
+.facebook:hover {
+    color:rgb(66, 103, 178) !important;
+}
+.medium:hover {
+    color:rgb(0, 100, 0) !important;
+}
+img.cardd-body {
+    /* max-width: auto; */
+    /* height: 220px; */
+    max-height: 100%;
+    max-width: 100%;
+    /* max-height: 220px; */
+}
+
+/* Whitepaper button */
+.unique-block-button {
+    margin-top: 2em;
+    width: auto;
+}
+.unique-block-button>span {
+    padding: 30px;
+}
+
+
+
+/* ADAPTIVE DESIGN */
+/* ---------------------------- */
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .embed-container {
+        max-width: 768px;
+    }
+    .grid1-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid2-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #how-image {
+        max-width: 576px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+/* Responsive Vimeo iframe
+Support: http://embedresponsively.com/ */
+/* ---------------------------- */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ---------------------------- */
