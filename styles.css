@@ -3,7 +3,7 @@ from the normal flow of the DOM and may require custom CSS
 (e.g., padding-top on the <body>) to prevent overlap with 
 other elements. */
 navbar {
-    padding-bottom: 5em;
+    padding-bottom: 0em;
 }
 
 .navbar-logo {
